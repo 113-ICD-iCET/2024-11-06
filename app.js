@@ -102,9 +102,8 @@
 
 
 
- let numbers = [10, 50, 68, 70, 95, 102, 305, 150, 72];
 
- // numbers.push("hello mama nimal");
+// numbers.push("hello mama nimal");
 // numbers.push(customer);
 
 //  numbers.pop();
@@ -126,6 +125,22 @@
 // let letters = ["B","K","M","A","C","N"];
 
 // console.log(numbers.find(10));
+
+// let numbers = [10, 50, 68, 70, 95, 102, 305, 150, 72];
+// let numbers2 = [8, 6, 8, 72];
+// let numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// let newAr = numbers.concat(numbers2,numbers3);
+
+// console.log(newAr);
+
+
+
+
+
+
+
+
 
 console.log(numbers);
 
