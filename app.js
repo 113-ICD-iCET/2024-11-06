@@ -134,37 +134,122 @@
 
 // console.log(numbers.toString());
 
-let customers=[
+let customers = [
     {
-        id:"C001",
-        name:"nimal",
-        address:"panadura",
-        age:12
+        id: "C001",
+        name: "nimal",
+        address: "panadura",
+        age: 12
     }
 ];
 
-let items=[
-    {
-        itemCode:"I001",
-        description:"bla bla",
-        stock:20
-    }
-];
+// let orders=[
+//     {
+//         customerId:"C001",
+//         cutomerName:"saman",
+//         items:cartList
 
-let orders=[
-    {
-        customerId:"C001",
-        cutomerName:"saman",
-        items:[
-            {
-                itemCode:"I001",
-                qty:2,
-                total:2500.00
-            }
-        ]
+//     }
+// ];
 
-    }
-];
+
+// let cartList=[
+//     {
+
+//     }
+// ]
+
+
+
+// let items=[];
+
+
+// https://fakestoreapi.com/products
+
+
+loadItems();
+
+async function loadItems() {
+    
+    let res = await fetch("https://fakestoreapi.com/products");
+    let items = await res.json();
+    let body = "";
+    items.forEach(element => {
+        console.log(element);
+        body+=`
+            <div class="col">
+                <div class="card shadow-sm">
+                  <img src=${element.image} alt="">
+                  <div class="card-body">
+                  <h2>${element.title}</h2>
+                    <p class="card-text">${element.description}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <p class="p-4 fw-bold">${element.price}</p>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-body-secondary">${element.rating.rate}</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        `;
+
+        
+        
+    });
+
+    console.log(body);
+
+    document.getElementById("row").innerHTML=body;
+    
+}
+
+// console.log(items);
+
+
+{/* <name>saman</name>
+<address>panadura<address/> */}
+
+
+
+
+// class Customer{
+//     constructor(){}
+
+//     setName(name) {
+//         this.name=name;
+//         return this;
+//     }
+//     setAddress(address){
+//         this.address=address;
+//         return this;
+//     }
+// }
+
+
+
+// let customer = new Customer()
+// .setName("Nimal")
+// .setAddress("Panadura");
+
+// console.log(customer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
