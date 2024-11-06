@@ -250,8 +250,9 @@ function searchCountry(){
         data.forEach(element => {
             body+=`
             
-            <div class="bg-body-tertiary p-5 rounded" style="background-image: url(${element.flags.png}); background-repeat: no-repeat; background-size: cover;">
-          <div class="col-sm-8 py-5 mx-auto">
+            <div class=" p-5 rounded" style="background-image: url(${element.flags.png}); background-repeat: no-repeat; background-size: cover; background-position: center;">
+          <div class="col-sm-8 py-5 mx-auto bg-gradient rounded p-5">
+
             <h1 class="display-5 fw-normal text-white">${element.name.common}</h1>
             <p class="fs-5 text-white">${element.flags.alt}</p>
             <h2 class="text-white">${element.capital[0]}</h2>
