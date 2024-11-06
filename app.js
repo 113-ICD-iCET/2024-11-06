@@ -23,12 +23,25 @@ let customer1 = {
         },
         {
             itemCode:"C002",
-            qty:2
+            qty:[10,20,30,40,50,60]
         },
         {
             itemCode:"C003",
             qty:6
-        }
+        },
+        [
+            {
+                number:2
+            },{
+                number:5
+            },{
+                number:6
+            },{
+                number:9
+            },{
+                number:8
+            }
+        ]
     ]
 };
 
@@ -41,12 +54,12 @@ let customer1 = {
 // console.log(customer1["name"]);
 // console.log(customer1["age"]);
 
-customer1.items.forEach(item=>{
-    console.log(item.qty);
+// customer1.items.forEach(item=>{
+//     console.log(item.qty);
     
-});
+// });
 
-console.log();
+console.log(customer1);
 
 
 
