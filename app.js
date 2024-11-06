@@ -12,38 +12,49 @@
 // console.log(age);
 
 
-let customer1 = {
-    name:"saman",
-    age:20,
-    address:"gamapaha",
-    items:[
-        {
-            itemCode:"C001",
-            qty:5
-        },
-        {
-            itemCode:"C002",
-            qty:[10,20,30,40,50,60]
-        },
-        {
-            itemCode:"C003",
-            qty:6
-        },
-        [
-            {
-                number:2
-            },{
-                number:5
-            },{
-                number:6
-            },{
-                number:9
-            },{
-                number:8
-            }
-        ]
-    ]
-};
+
+// function Customer(name,age,address){
+//     this.name=name;
+//     this.age=age;
+//     this.address=address;
+// }
+
+// let customer2 = new Customer("saman",20,"panadura");
+// let customer3 = new Customer("saman",20,"panadura");
+
+
+// let customer1 = {
+//     name:"saman",
+//     age:20,
+//     address:"gamapaha",
+//     items:[
+//         {
+//             itemCode:"C001",
+//             qty:5
+//         },
+//         {
+//             itemCode:"C002",
+//             qty:[10,20,30,40,50,60]
+//         },
+//         {
+//             itemCode:"C003",
+//             qty:6
+//         },
+//         [
+//             {
+//                 number:2
+//             },{
+//                 number:5
+//             },{
+//                 number:6
+//             },{
+//                 number:9
+//             },{
+//                 number:8
+//             }
+//         ]
+//     ]
+// };
 
 
 // console.log(customer1.name);
@@ -56,10 +67,77 @@ let customer1 = {
 
 // customer1.items.forEach(item=>{
 //     console.log(item.qty);
-    
+
 // });
 
-console.log(customer1);
+// let customerList =[
+//     {
+//         id:"C001",
+//         name:"nimal",
+//         age:20,
+//         address:"panadura"
+//     },
+//     10,
+//     20,
+//     30,
+//     "Helloooo",
+//     true,
+// ];
+
+// console.log(customerList);
+
+
+
+
+// numbers[1]=300;
+// numbers[10]=200;
+// numbers[11]=350;
+
+// console.log(numbers);
+
+// let customer={
+//     name:"nimal",
+//     age:20
+// }
+
+
+
+ let numbers = [10, 50, 68, 70, 95, 102, 305, 150, 72];
+
+ // numbers.push("hello mama nimal");
+// numbers.push(customer);
+
+//  numbers.pop();
+
+// numbers.length;
+
+// numbers.toString();
+
+// numbers.forEach()
+
+// console.log(numbers.indexOf(102));
+
+
+
+
+
+// let letters = ["B","K","M","A","C","N"];
+
+
+
+
+
+
+
+// console.log(numbers.find(10));
+
+
+
+
+
+
+
+
 
 
 
