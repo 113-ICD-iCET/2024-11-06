@@ -126,7 +126,7 @@
 
 // console.log(numbers.find(10));
 
-let numbers = [10, 50, 68, 70, 95, 102, 305, 150, 72];
+// let numbers = [10, 50, 68, 70, 95, 102, 305, 150, 72];
 // let numbers2 = [8, 6, 8, 72];
 // let numbers3 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -134,7 +134,37 @@ let numbers = [10, 50, 68, 70, 95, 102, 305, 150, 72];
 
 // console.log(numbers.toString());
 
+let customers=[
+    {
+        id:"C001",
+        name:"nimal",
+        address:"panadura",
+        age:12
+    }
+];
 
+let items=[
+    {
+        itemCode:"I001",
+        description:"bla bla",
+        stock:20
+    }
+];
+
+let orders=[
+    {
+        customerId:"C001",
+        cutomerName:"saman",
+        items:[
+            {
+                itemCode:"I001",
+                qty:2,
+                total:2500.00
+            }
+        ]
+
+    }
+];
 
 
 
