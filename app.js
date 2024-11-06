@@ -117,19 +117,20 @@
 
 // console.log(numbers.indexOf(102));
 
+// numbers.shift();
+// numbers.shift();
 
-
-
+// numbers.unshift("Hello")
+// numbers.unshift("Hello1")
 
 // let letters = ["B","K","M","A","C","N"];
 
-
-
-
-
-
-
 // console.log(numbers.find(10));
+
+console.log(numbers);
+
+
+
 
 
 
